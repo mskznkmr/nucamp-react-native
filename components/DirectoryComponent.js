@@ -4,16 +4,17 @@ import { ListItem } from 'react-native-elements';
 import { CAMPSITES } from '../shared/campsites';
 
 class Directory extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
             campsites: CAMPSITES
-        }
+        };
     }
 
     static navigationOptions = {
         title: 'Directory'
-    };
+    }
 
     render() {
         const { navigate } = this.props.navigation;
@@ -27,13 +28,12 @@ class Directory extends Component {
                 />
             );
         };
-        
-    
+
         return (
             <FlatList
-                data = {this.state.campsites}
-                renderItem = {renderDirectoryItem}
-                keyExtractor = {item => item.id.toString()}
+                data={this.state.campsites}
+                renderItem={renderDirectoryItem}
+                keyExtractor={item => item.id.toString()}
             />
         );
     }
