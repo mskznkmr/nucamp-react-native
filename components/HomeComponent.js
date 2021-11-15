@@ -47,7 +47,6 @@ class Home extends Component {
                     item={this.state.promotions.filter(promotion => promotion.featured)[0]} />
                 <RenderItem
                     item={this.state.partners.filter(partner => partner.featured)[0]} />
-
             </ScrollView>
         );
     }

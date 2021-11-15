@@ -11,7 +11,7 @@ function Mission () {
 
             </Text>
     );
-} 
+}
 
 
 
@@ -53,7 +53,6 @@ class About extends Component {
                 </Card>
             </ScrollView>
         );
-        
     }
 }
 
